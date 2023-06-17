@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  background: #0F172A;
+  height: 100vh;
+  padding: 10px 15px;
+}
+
+.sidebar h6 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  margin: 0;
+}
+
+.sidebar ul .nav-link .nav-item {
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+
+.sidebar ul .nav-link.active .nav-item {
+  background: #1e293b;
+}
+
+.main-content .header {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main-content .header .profile h6 {
+  background: green;
+  padding: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login .login-btn {
+  background: #0F172A;
+  color: #FFFFFF;
+  border-color: #0F172A;
+}
+
+.login .forgot-password a {
+  text-decoration: none;
+  color: #0F172A;
+}
+
+.login .forgot-password a:hover {
+  color: #1d418e;
+}

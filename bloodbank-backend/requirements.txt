@@ -1,0 +1,9 @@
+django
+dj-rest-auth
+djangorestframework
+django-allauth==0.52.0
+drf-yasg
+djangorestframework-simplejwt
+pillow
+django-cors-headers
+django-environ
