@@ -56,3 +56,4 @@ npm run dev
 # or
 yarn run dev
 ```
+Your app will run on http://localhost:3000/
