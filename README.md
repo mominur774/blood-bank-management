@@ -1,4 +1,4 @@
-Django and React polls app with Social authentication.
+Blood Bank Management system with Django and React.
 
 # Getting Started
 
