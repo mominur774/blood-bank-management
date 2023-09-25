@@ -46,12 +46,13 @@ class Donor(models.Model):
     def save(self, *args, **kwargs):
         current_date = timezone.now()
         if self.owner:
-            donor = Donor.objects.get(owner=self.owner)
-            time_diff = current_date - donor.created_at
-            if time_diff.days < 90:
-                raise serializers.ValidationError(
-                    "Can not donate. Please wait for {} days before donating again.".format(90-time_diff.days)
-                )
+            donor = Donor.objects.filter(owner=self.owner)
+            if donor.exists():
+                time_diff = current_date - donor.first().created_at
+                if time_diff.days < 90:
+                    raise serializers.ValidationError(
+                        "Can not donate. Please wait for {} days before donating again.".format(90-time_diff.days)
+                    )
 
         super().save(*args, **kwargs)
 

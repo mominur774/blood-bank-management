@@ -16,13 +16,13 @@ const Sidebar = ({ page }) => {
           <Link className='nav-item' href='/'>Home</Link>
         </li>
         <li className={`nav-link ${page == 'Blood Bank' && 'active'}`}>
-          <Link className='nav-item' href='/blood-bank'>Blood Bank</Link>
+          <Link className='nav-item' href={`${gContext?.isLoggedIn ? '/blood-bank' : '/sign-in'}`}>Blood Bank</Link>
         </li>
         <li className={`nav-link ${page == 'Donor' && 'active'}`}>
-          <Link className='nav-item' href='/donor'>Donor</Link>
+          <Link className='nav-item' href={`${gContext?.isLoggedIn ? '/donor' : '/sign-in'}`}>Donor</Link>
         </li>
         <li className={`nav-link ${page == 'Recipient' && 'active'}`}>
-          <Link className='nav-item' href='/recipient'>Recipient</Link>
+          <Link className='nav-item' href={`${gContext?.isLoggedIn ? '/recipient' : '/sign-in'}`}>Recipient</Link>
         </li>
       </ul>
     </div>
